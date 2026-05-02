@@ -35,27 +35,50 @@
   "@context": "https://schema.org",
   "@graph": [
 
-    /* ================= ORGANIZATION ================= */
     {
-      "@type": "Organization",
+      "@type": ["Organization", "ProfessionalService"],
       "@id": "https://engineeringsimexpert.github.io/#organization",
-      "name": "ANSYS CFD & FEA Consulting Services",
+      "name": "CFD & FEA Consulting – ANSYS Simulation Expert",
       "url": "https://engineeringsimexpert.github.io",
       "logo": "https://engineeringsimexpert.github.io/favicon.png",
       "image": "https://engineeringsimexpert.github.io/favicon.png",
-      "description": "Engineering consulting services specializing in CFD (Computational Fluid Dynamics), FEM/FEA simulations, thermal analysis, and structural optimization using ANSYS tools.",
+      "description": "Professional CFD and FEA consulting services using ANSYS Fluent and ANSYS Mechanical. تخصص في محاكاة التدفق، التحليل الحراري، وتحليل الإجهاد لتحسين التصميم الهندسي.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Worldwide"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "DE"
+      },
       "sameAs": [
         "https://www.linkedin.com/in/w-m-5b70423a3"
       ],
-      "areaServed": "Worldwide",
-      "foundingLocation": "Germany",
 
-      /* 🔥 TRUST + LEAD SIGNAL (NEW) */
       "contactPoint": {
         "@type": "ContactPoint",
-        "contactType": "engineering consulting",
+        "contactType": "customer support",
         "availableLanguage": ["English"],
         "areaServed": "Worldwide"
+      },
+
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Engineering Simulation Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://engineeringsimexpert.github.io/#cfd-service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@id": "https://engineeringsimexpert.github.io/#fea-service"
+            }
+          }
+        ]
       },
 
       "founder": {
@@ -63,61 +86,53 @@
       }
     },
 
-    /* ================= PERSON (YOU - ENGINEER ENTITY) ================= */
     {
       "@type": "Person",
       "@id": "https://engineeringsimexpert.github.io/#person",
-      "name": "Freelance CFD & FEM Engineer",
-      "jobTitle": "Computational Fluid Dynamics (CFD) & Finite Element Method (FEM) Engineer",
-      "image": "https://engineeringsimexpert.github.io/favicon.png",
-      "description": "CFD and FEM engineer specializing in ANSYS Fluent and ANSYS Mechanical for fluid flow simulation, heat transfer, structural mechanics, and engineering design optimization.",
+      "name": "CFD & FEA Simulation Engineer",
+      "jobTitle": "ANSYS CFD & FEM Specialist",
       "url": "https://engineeringsimexpert.github.io",
-      "worksFor": {
-        "@id": "https://engineeringsimexpert.github.io/#organization"
-      },
       "sameAs": [
         "https://www.linkedin.com/in/w-m-5b70423a3"
       ],
+      "worksFor": {
+        "@id": "https://engineeringsimexpert.github.io/#organization"
+      },
       "knowsAbout": [
-        "Computational Fluid Dynamics",
-        "Finite Element Method",
-        "Finite Element Analysis",
+        "CFD Consulting",
         "ANSYS Fluent",
         "ANSYS Mechanical",
+        "FEA Analysis",
+        "Thermal Simulation",
         "Heat Transfer",
         "Turbulence Modeling",
-        "Structural Analysis",
-        "Thermal Simulation",
+        "Structural Mechanics",
         "Engineering Optimization",
-        "Aerospace Simulation",
+        "Aerospace CFD",
         "Automotive Simulation",
-        "HVAC Simulation",
+        "HVAC CFD",
         "Energy Systems Modeling"
       ]
     },
 
-    /* ================= WEBSITE ================= */
     {
       "@type": "WebSite",
       "@id": "https://engineeringsimexpert.github.io/#website",
       "url": "https://engineeringsimexpert.github.io",
-      "name": "ANSYS CFD & FEA Engineering Services",
+      "name": "CFD & FEA Consulting Services",
       "publisher": {
         "@id": "https://engineeringsimexpert.github.io/#organization"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://engineeringsimexpert.github.io/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
       }
     },
 
-    /* ================= WEBPAGE (STRENGTHENED ENTITY ANCHOR) ================= */
     {
       "@type": "WebPage",
       "@id": "https://engineeringsimexpert.github.io/#webpage",
       "url": "https://engineeringsimexpert.github.io",
-      "name": "CFD & FEM Engineering Consulting Services",
+      "name": "ANSYS CFD & FEA Consulting Services – Get a Quote",
+      "isPartOf": {
+        "@id": "https://engineeringsimexpert.github.io/#website"
+      },
       "about": {
         "@id": "https://engineeringsimexpert.github.io/#organization"
       },
@@ -127,98 +142,77 @@
       }
     },
 
-    /* ================= SERVICES ================= */
-
     {
       "@type": "Service",
       "@id": "https://engineeringsimexpert.github.io/#cfd-service",
-      "name": "CFD Simulation Services",
-      "serviceType": "Computational Fluid Dynamics Consulting",
-      "description": "Advanced CFD simulations using ANSYS Fluent for fluid flow, heat transfer, turbulence modeling, and thermal system optimization in aerospace, automotive, HVAC, and energy systems.",
+      "name": "ANSYS CFD Consulting Services",
+      "serviceType": "CFD Simulation and Fluid Dynamics Consulting",
       "provider": {
         "@id": "https://engineeringsimexpert.github.io/#organization"
       },
       "areaServed": "Worldwide",
+      "description": "CFD consulting using ANSYS Fluent for fluid flow simulation, heat transfer, turbulence modeling, and aerodynamic optimization.",
 
-      /* 🔥 CONVERSION SIGNAL (NEW) */
       "offers": {
         "@type": "Offer",
-        "price": "Contact for pricing",
         "priceCurrency": "EUR",
-        "availability": "https://schema.org/OnlineOnly"
+        "availability": "https://schema.org/InStock",
+        "url": "https://engineeringsimexpert.github.io/#contact",
+        "description": "Request a quote for CFD consulting services"
       }
     },
 
     {
       "@type": "Service",
       "@id": "https://engineeringsimexpert.github.io/#fea-service",
-      "name": "FEA / FEM Structural Analysis Services",
+      "name": "ANSYS FEA / FEM Consulting Services",
       "serviceType": "Finite Element Analysis Consulting",
-      "description": "Structural, thermal, and mechanical stress analysis using FEM/FEA methods in ANSYS Mechanical for product design, failure analysis, and performance optimization.",
       "provider": {
         "@id": "https://engineeringsimexpert.github.io/#organization"
       },
       "areaServed": "Worldwide",
+      "description": "FEA consulting services using ANSYS Mechanical for structural analysis, stress simulation, and thermal performance evaluation.",
+
       "offers": {
         "@type": "Offer",
-        "price": "Contact for pricing",
         "priceCurrency": "EUR",
-        "availability": "https://schema.org/OnlineOnly"
+        "availability": "https://schema.org/InStock",
+        "url": "https://engineeringsimexpert.github.io/#contact",
+        "description": "Request a quote for FEA consulting services"
       }
     },
 
-    /* ================= CASE STUDIES ================= */
-    {
-      "@type": "ItemList",
-      "@id": "https://engineeringsimexpert.github.io/#case-studies",
-      "name": "Engineering Simulation Case Studies",
-      "itemListElement": [
-        {
-          "@type": "CreativeWork",
-          "position": 1,
-          "name": "CFD Heat Transfer Optimization Study",
-          "description": "CFD simulation using ANSYS Fluent for thermal performance and heat dissipation optimization."
-        },
-        {
-          "@type": "CreativeWork",
-          "position": 2,
-          "name": "FEA Structural Stress Analysis Study",
-          "description": "Finite Element Analysis using ANSYS Mechanical for stress, deformation, and failure prediction."
-        }
-      ]
-    },
-
-    /* ================= FAQ ================= */
     {
       "@type": "FAQPage",
       "@id": "https://engineeringsimexpert.github.io/#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is CFD used for?",
+          "name": "How much does CFD consulting cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "CFD (Computational Fluid Dynamics) is used to simulate fluid flow, heat transfer, and aerodynamic behavior in engineering systems such as aerospace, automotive, HVAC, and energy applications."
+            "text": "CFD consulting costs depend on project complexity, geometry, and simulation requirements. Contact us for a custom ANSYS CFD quote."
           }
         },
         {
           "@type": "Question",
-          "name": "What is FEM or FEA analysis?",
+          "name": "What industries use CFD and FEA services?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "FEM/FEA is used to analyze structural integrity, stress distribution, deformation, and failure risk in mechanical and thermal systems."
+            "text": "CFD and FEA are used in aerospace, automotive, HVAC, energy systems, and industrial engineering for simulation and optimization."
           }
         },
         {
           "@type": "Question",
-          "name": "Which software is used for CFD and FEA simulation?",
+          "name": "Which software do you use for simulations?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ANSYS Fluent is used for CFD simulations and ANSYS Mechanical is used for FEM/FEA structural and thermal analysis."
+            "text": "ANSYS Fluent is used for CFD simulations and ANSYS Mechanical for FEA and structural analysis."
           }
         }
       ]
     }
+
   ]
 }
 </script>
