@@ -412,8 +412,47 @@
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </button>
           
-          <a href="cfd.html" class="border border-slate-700 text-slate-300 hover:bg-slate-800/50 hover:text-white px-8 py-4 text-base font-medium rounded-xl inline-flex items-center justify-center transition-all btn-hover">
-    Explore CFD Services
+          <a href="cfd.html"
+   style="border: 1px solid rgba(34,211,238,0.18); color: #7dd3e8; background: rgba(8, 22, 30, 0.6); box-shadow: none; transition: all 0.35s ease;"
+   class="group relative overflow-hidden px-8 py-4 text-base font-semibold rounded-xl inline-flex items-center justify-center gap-2.5 transition-all duration-300 hover:scale-[1.04] active:scale-[0.98]">
+
+  <!-- Animated CFD Canvas Background -->
+  <canvas width="320" height="56" style="opacity: 1;" class="absolute inset-0 w-full h-full"></canvas>
+
+  <!-- Content -->
+  <span class="relative z-10 flex items-center gap-2.5">
+
+    <!-- Wave Streamline Icon -->
+    <svg class="w-5 h-5 transition-all duration-500"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="1.8"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+      <path d="M2 8 Q6 4 10 8 Q14 12 18 8 Q20 6 22 8" />
+      <path d="M2 12 Q6 8 10 12 Q14 16 18 12 Q20 10 22 12" />
+      <path d="M2 16 Q6 12 10 16 Q14 20 18 16 Q20 14 22 16" />
+    </svg>
+
+    <!-- Text Label -->
+    <span style="letter-spacing: 0; transition: letter-spacing 0.3s ease;">
+      Explore CFD Services
+    </span>
+
+    <!-- Arrow Icon -->
+    <svg class="w-4 h-4"
+         style="transform: translateX(0); opacity: 0.5; transition: all 0.35s ease;"
+         viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2"
+         stroke-linecap="round"
+         stroke-linejoin="round">
+      <path d="M5 12h14M13 6l6 6-6 6" />
+    </svg>
+
+  </span>
 </a>
           
         </div>
