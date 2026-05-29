@@ -412,113 +412,137 @@
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </button>
           
-         <a href="cfd.html"
-   class="group relative overflow-hidden px-8 py-4 text-base font-semibold rounded-xl inline-flex items-center justify-center gap-2.5"
-   style="
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      overflow: hidden;
-      padding: 16px 32px;
-      border-radius: 14px;
-      text-decoration: none;
-      border: 1px solid rgba(34,211,238,0.18);
-      color: #7dd3e8;
-      background: rgba(8, 22, 30, 0.6);
-      box-shadow: none;
-      transition: all 0.35s ease;
-   "
+        <style>
+  a.cfd-button {
+    position: relative;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    border: 1px solid rgba(34, 211, 238, 0.18);
+    color: #7dd3e8;
+    background: rgba(8, 22, 30, 0.6);
+    text-decoration: none;
+    transition: all 0.35s ease;
+  }
 
-   onmouseover="
-      this.style.transform='scale(1.04)';
-      this.querySelector('.arrow').style.transform='translateX(4px)';
-      this.querySelector('.arrow').style.opacity='1';
-      this.querySelector('.text').style.letterSpacing='0.5px';
-   "
+  a.cfd-button:hover {
+    border-color: rgba(34, 211, 238, 0.55);
+    color: #e0f9ff;
+    background: rgba(8, 30, 40, 0.92);
+    box-shadow: 0 0 24px rgba(34, 211, 238, 0.18), inset 0 0 20px rgba(34, 211, 238, 0.06);
+    transform: scale(1.04);
+  }
 
-   onmouseout="
-      this.style.transform='scale(1)';
-      this.querySelector('.arrow').style.transform='translateX(0)';
-      this.querySelector('.arrow').style.opacity='0.5';
-      this.querySelector('.text').style.letterSpacing='0';
-   "
+  a.cfd-button:active {
+    transform: scale(0.98);
+  }
 
-   onmousedown="this.style.transform='scale(0.98)'"
-   onmouseup="this.style.transform='scale(1.04)'"
->
+  a.cfd-button canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
 
-  <!-- Animated CFD Canvas Background -->
-  <canvas width="320" height="56"
-          class="absolute inset-0 w-full h-full"
-          style="
-            position:absolute;
-            inset:0;
-            width:100%;
-            height:100%;
-            opacity:1;
-            z-index:0;
-          ">
-  </canvas>
+  a.cfd-button span {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
 
-  <!-- Content -->
-  <span style="
-      position:relative;
-      z-index:10;
-      display:flex;
-      align-items:center;
-      gap:10px;
-  ">
+  a.cfd-button svg {
+    transition: all 0.4s ease;
+  }
 
-    <!-- Wave Streamline Icon -->
-    <svg class="wave-icon"
-         width="20"
-         height="20"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="1.8"
-         stroke-linecap="round"
-         stroke-linejoin="round"
-         style="transition:all 0.5s ease;">
+  a.cfd-button:hover svg:first-of-type {
+    filter: drop-shadow(0 0 6px #22d3ee);
+    transform: scale(1.15) rotate(-8deg);
+  }
 
+  a.cfd-button:hover svg:last-of-type {
+    transform: translateX(4px);
+    opacity: 1;
+  }
+
+  a.cfd-button svg:last-of-type {
+    opacity: 0.5;
+  }
+</style>
+
+<a href__="cfd.html" class="cfd-button">
+  <canvas width="320" height="56"></canvas>
+  
+  <span>
+    <svg class="cfd-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
       <path d="M2 8 Q6 4 10 8 Q14 12 18 8 Q20 6 22 8" />
       <path d="M2 12 Q6 8 10 12 Q14 16 18 12 Q20 10 22 12" />
       <path d="M2 16 Q6 12 10 16 Q14 20 18 16 Q20 14 22 16" />
     </svg>
 
-    <!-- Text -->
-    <span class="text"
-          style="
-            transition:letter-spacing 0.3s ease;
-            letter-spacing:0;
-          ">
-      Explore CFD Services
-    </span>
+    <span>Explore CFD Services</span>
 
-    <!-- Arrow -->
-    <svg class="arrow"
-         width="16"
-         height="16"
-         viewBox="0 0 24 24"
-         fill="none"
-         stroke="currentColor"
-         stroke-width="2"
-         stroke-linecap="round"
-         stroke-linejoin="round"
-         style="
-            transform:translateX(0);
-            opacity:0.5;
-            transition:all 0.35s ease;
-         ">
-
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M5 12h14M13 6l6 6-6 6" />
     </svg>
-
   </span>
-
 </a>
+
+<script>
+  const canvas = document.querySelector('a.cfd-button canvas');
+  const button = document.querySelector('a.cfd-button');
+  const ctx = canvas.getContext('2d');
+  let hovered = false, time = 0;
+
+  button.addEventListener('mouseenter', () => { hovered = true; });
+  button.addEventListener('mouseleave', () => { hovered = false; });
+
+  function draw() {
+    ctx.clearRect(0, 0, 320, 56);
+    time += hovered ? 0.04 : 0.01;
+
+    for (let i = 0; i < 7; i++) {
+      const y = (56 / 8) * (i + 1);
+      const amp = hovered ? 10 + i * 1.5 : 3 + i * 0.5;
+      const freq = 0.04 + i * 0.005;
+      const speed = hovered ? 1.2 + i * 0.3 : 0.3;
+      const opacity = hovered ? 0.55 - i * 0.04 : 0.15 - i * 0.01;
+      const hue = hovered ? 180 + i * 12 + time * 20 : 200;
+
+      ctx.beginPath();
+      ctx.strokeStyle = `hsla(${hue}, 90%, 65%, ${opacity})`;
+      ctx.lineWidth = hovered ? 1.4 - i * 0.08 : 0.7;
+
+      for (let x = 0; x <= 320; x += 2) {
+        const py = y + amp * Math.sin(freq * x - speed * time) + amp * 0.4 * Math.sin(freq * 2 * x - speed * 1.5 * time + i);
+        x === 0 ? ctx.moveTo(x, py) : ctx.lineTo(x, py);
+      }
+      ctx.stroke();
+    }
+
+    if (hovered) {
+      for (let p = 0; p < 5; p++) {
+        const px = ((time * 60 * (0.5 + p * 0.3)) % 340) - 10;
+        const py = 28 + 18 * Math.sin(0.05 * px - time * (0.8 + p * 0.2) + p * 1.2);
+        ctx.beginPath();
+        ctx.arc(px, py, 2.5, 0, Math.PI * 2);
+        ctx.fillStyle = `hsla(${180 + p * 20}, 100%, 75%, 0.85)`;
+        ctx.fill();
+      }
+    }
+
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+</script>
           
         </div>
 
