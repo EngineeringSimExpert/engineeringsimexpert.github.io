@@ -268,7 +268,7 @@
         <a href="#industries" class="nav-link">Industries</a>
         <a href="#process" class="nav-link">Process</a>
         <a href="#case-studies" class="nav-link">Case Studies</a>
-        <a href="#hy-us" class="nav-link">Why Us</a>
+        <a href="#why-us" class="nav-link">Why Us</a>
 
         <button
           onclick="location.hash='#contact'"
@@ -1354,10 +1354,19 @@ function scrollToTop() {
 }
 
 /* ── Mobile nav ── */
-function toggleMobile() {
-  var m = document.getElementById('mobileMenu');
-  m.classList.toggle('open');
-}
+ function toggleMobile() {
+    const menu = document.getElementById("mobileMenu");
+    const btn = document.getElementById("hamburger");
+
+    const isOpen = menu.style.display === "block";
+
+    menu.style.display = isOpen ? "none" : "block";
+    btn.setAttribute("aria-expanded", String(!isOpen));
+  }
+
+  function goToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
 /* ── Case Study Lightbox ── */
 var lbData = [
