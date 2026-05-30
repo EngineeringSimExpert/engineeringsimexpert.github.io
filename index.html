@@ -630,12 +630,30 @@
     </div>
   </div>
 
-  <!-- Scroll Down Button -->
-  <div class="absolute bottom-8 left-1/2 -translate-x-1/2">
-    <button onclick="scrollToSection('about')" class="text-slate-600 hover:text-slate-400 transition-colors">
-      <svg class="h-8 w-8 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-    </button>
-  </div>
+    <!-- Scroll Down Button -->
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2">
+  <button
+    onclick="scrollToSection('about')"
+    class="text-slate-600 hover:text-slate-400 transition-colors"
+    aria-label="Scroll down to About section"
+  >
+    <svg
+      class="h-8 w-8 animate-bounce"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </button>
+</div>
+    
 </section>
 
   <!-- ═══════════════════════════════════════════
