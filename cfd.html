@@ -258,6 +258,10 @@
       <!-- =========================
            Desktop Navigation
       ========================== -->
+      <script>
+  document.documentElement.style.scrollBehavior = "smooth";
+</script>
+      
       <div class="hidden-mobile" style="display:flex; align-items:center; gap:28px;">
 
         <a href="#services" class="nav-link">Services</a>
@@ -267,7 +271,7 @@
         <a href="#hy-us" class="nav-link">Why Us</a>
 
         <button
-          onclick="goTo('#contact')"
+          onclick="location.hash='#contact'"
           style="background:#2563eb; color:#fff; border:none; border-radius:12px; padding:10px 20px; font-size:.875rem; font-weight:600; cursor:pointer; transition:background .2s;"
           onmouseover="this.style.background='#3b82f6'"
           onmouseout="this.style.background='#2563eb'"
@@ -276,7 +280,7 @@
         </button>
 
         <button
-          onclick="goTo('#contact')"
+          onclick="location.hash='#contact'"
           style="background:#10b981; color:#fff; border:none; border-radius:12px; padding:10px 20px; font-size:.875rem; font-weight:600; cursor:pointer; transition:background .2s;"
           onmouseover="this.style.background='#059669'"
           onmouseout="this.style.background='#10b981'"
@@ -791,7 +795,7 @@
     </div>
 
     <div style="text-align:center;margin-top:64px;">
-      <button onclick="goTo('#contact')"
+      <onclick="location.hash='#contact'"
         style="background:#fff;color:#0f172a;border:none;border-radius:12px;padding:16px 32px;font-size:1rem;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:all .2s;"
         onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
         Start Your CFD Project
@@ -906,7 +910,7 @@
 
     <div style="text-align:center;margin-top:64px;">
       <p style="color:#64748b;font-size:.875rem;margin-bottom:20px;">Need a similar analysis for your project?</p>
-      <button onclick="goTo('#contact')"
+      <onclick="location.hash='#contact'"
         style="background:#fff;color:#0f172a;border:none;border-radius:12px;padding:14px 32px;font-size:1rem;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:all .2s;"
         onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
         Discuss Your CFD Project
