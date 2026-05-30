@@ -232,14 +232,8 @@
   
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-
   <!-- ===== Tailwind ===== -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Calendly -->
-   
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
   <!-- ===== Your Styles ===== -->
   <style>
@@ -263,6 +257,25 @@
     }
   </style>
 </head>
+
+  <script>
+function loadCalendly() {
+
+  if (window.calendlyLoaded) return;
+
+  const css = document.createElement('link');
+  css.rel = 'stylesheet';
+  css.href = 'https://assets.calendly.com/assets/external/widget.css';
+
+  const script = document.createElement('script');
+  script.src = 'https://assets.calendly.com/assets/external/widget.js';
+
+  document.head.appendChild(css);
+  document.body.appendChild(script);
+
+  window.calendlyLoaded = true;
+}
+</script>
   
 <body class="bg-white">
 
@@ -1671,7 +1684,7 @@ document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLi
 </footer>
 
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser/dist/email.min.js"></script>
 
 <script>
   // ===== Smooth scroll =====
