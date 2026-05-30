@@ -259,21 +259,30 @@
 </head>
 
   <script>
-function loadCalendly() {
+function openCalendly() {
 
-  if (window.calendlyLoaded) return;
+  if (window.Calendly) {
+    Calendly.initPopupWidget({
+      url: 'https://calendly.com/engineeringsimexpert/30min'
+    });
+    return;
+  }
 
   const css = document.createElement('link');
   css.rel = 'stylesheet';
   css.href = 'https://assets.calendly.com/assets/external/widget.css';
+  document.head.appendChild(css);
 
   const script = document.createElement('script');
   script.src = 'https://assets.calendly.com/assets/external/widget.js';
 
-  document.head.appendChild(css);
-  document.body.appendChild(script);
+  script.onload = function() {
+    Calendly.initPopupWidget({
+      url: 'https://calendly.com/engineeringsimexpert/30min'
+    });
+  };
 
-  window.calendlyLoaded = true;
+  document.body.appendChild(script);
 }
 </script>
   
@@ -1539,7 +1548,7 @@ document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLi
         </p>
 
         <button
-  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/engineeringsimexpert/30min'}); return false;"
+  onclick="openCalendly(); return false;"
   class="bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl px-7 py-5 text-2xl font-semibold transition-all"
 >
   Book Free Call
