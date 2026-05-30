@@ -271,12 +271,18 @@
 
       <div class="flex items-center flex-shrink-0">
   <!-- Logo -->
-  <button onclick="scrollToTop()" class="flex items-center">
-    <svg
-  class="w-16 h-16 md:w-20 md:h-20"
-  viewBox="0 0 200 200"
-  xmlns="http://www.w3.org/2000/svg"
+  <button
+  onclick="scrollToTop()"
+  class="flex items-center"
+  aria-label="Scroll to top"
 >
+  <svg
+    class="w-16 h-16 md:w-20 md:h-20"
+    viewBox="0 0 200 200"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true"
+  >
+    
   <defs>
     <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#3b82f6"/>
