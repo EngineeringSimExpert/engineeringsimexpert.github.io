@@ -40,38 +40,73 @@
   <!-- ===== Structured Data ===== -->
   <script type="application/ld+json">
   {
-        "@type": ["Organization","ProfessionalService"],
-        "@id": "https://engineeringsimexpert.github.io/#organization",
-        "name": "CFD Consulting – ANSYS Fluent Simulation Expert",
-        "url": "https://engineeringsimexpert.github.io/",
-        "logo": "https://engineeringsimexpert.github.io/favicon.png",
-        "description": "Professional CFD consulting services using ANSYS Fluent for fluid flow simulation, heat transfer analysis, aerodynamic optimization, and thermal management.",
-        "areaServed": {"@type":"Place","name":"Worldwide"},
-        "address": {"@type":"PostalAddress","addressCountry":"DE"},
-        "sameAs": ["https://www.linkedin.com/in/w-m-5b70423a3"]
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization","ProfessionalService"],
+      "@id": "https://engineeringsimexpert.github.io/#organization",
+      "name": "CFD Consulting – ANSYS Fluent Simulation Expert",
+      "url": "https://engineeringsimexpert.github.io/",
+      "logo": "https://engineeringsimexpert.github.io/favicon.png",
+      "description": "Professional CFD consulting services using ANSYS Fluent for fluid flow simulation, heat transfer analysis, aerodynamic optimization, and thermal management.",
+      "areaServed": {
+        "@type": "Place",
+        "name": "Worldwide"
       },
-      {
-        "@type": "Service",
-        "name": "ANSYS Fluent CFD Consulting Services",
-        "serviceType": "CFD Simulation and Fluid Dynamics Consulting",
-        "areaServed": "Worldwide",
-        "description": "Expert CFD consulting using ANSYS Fluent for internal/external flow, heat transfer, aerodynamics, HVAC, electronics cooling, and pressure drop analysis.",
-        "offers": {"@type":"Offer","priceCurrency":"EUR","availability":"https://schema.org/InStock","description":"Request a quote for CFD consulting services"
-        "@id": "https://engineeringsimexpert.github.io/#organization",
-        "url": "https://engineeringsimexpert.github.io/",
-        "logo": "https://engineeringsimexpert.github.io/favicon.png",
-          }
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "DE"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type":"Question","name":"What CFD services do you offer?","acceptedAnswer":{"@type":"Answer","text":"We offer comprehensive CFD consulting using ANSYS Fluent including internal/external flow analysis, thermal and heat transfer simulation, HVAC airflow, pressure drop analysis, electronics cooling, multiphase flow, and turbulence modeling."}},
-          {"@type":"Question","name":"How much does CFD consulting cost?","acceptedAnswer":{"@type":"Answer","text":"CFD consulting costs depend on project complexity, geometry, and simulation requirements. Contact us for a custom ANSYS Fluent CFD quote with fast 24-hour response."}},
-          {"@type":"Question","name":"What industries benefit from CFD simulation?","acceptedAnswer":{"@type":"Answer","text":"CFD simulation is used across automotive, aerospace, HVAC, energy systems, manufacturing, electronics cooling, and industrial equipment sectors for design optimization and performance validation."}}
-        ]
+      "sameAs": [
+        "https://www.linkedin.com/in/w-m-5b70423a3"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://engineeringsimexpert.github.io/#service",
+      "name": "ANSYS Fluent CFD Consulting Services",
+      "serviceType": "CFD Simulation and Fluid Dynamics Consulting",
+      "areaServed": "Worldwide",
+      "description": "Expert CFD consulting using ANSYS Fluent for internal/external flow, heat transfer, aerodynamics, HVAC, electronics cooling, and pressure drop analysis.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "description": "Request a quote for CFD consulting services"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://engineeringsimexpert.github.io/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What CFD services do you offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer comprehensive CFD consulting using ANSYS Fluent including internal/external flow analysis, thermal and heat transfer simulation, HVAC airflow, pressure drop analysis, electronics cooling, multiphase flow, and turbulence modeling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does CFD consulting cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CFD consulting costs depend on project complexity, geometry, and simulation requirements. Contact us for a custom ANSYS Fluent CFD quote with fast 24-hour response."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What industries benefit from CFD simulation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CFD simulation is used across automotive, aerospace, HVAC, energy systems, manufacturing, electronics cooling, and industrial equipment sectors for design optimization and performance validation."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 
   <!-- ===== Google Analytics ===== -->
