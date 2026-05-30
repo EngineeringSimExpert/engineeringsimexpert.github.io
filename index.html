@@ -1717,14 +1717,8 @@ document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLi
   }
 
   // ===== EmailJS =====
-  window.addEventListener('load', function () {
-
-  if (!window.emailjs) {
-    console.error('EmailJS failed to load');
-    return;
-  }
-
-  emailjs.init("nR-KF3BqsXwqAb2MP");
+  
+  emailjs.init("nR-KF3BqsXwqAb2MP"); // Your public key
 
   const form = document.getElementById('contactForm');
   const submitBtn = document.getElementById('submitBtn');
@@ -1733,6 +1727,23 @@ document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLi
   const btnSpinner = document.getElementById('btnSpinner');
   const successMessage = document.getElementById('successMessage');
   const errorMessage = document.getElementById('errorMessage');
+
+  function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  }
+
+  function showError(fieldId, show) {
+    const errorElement = document.getElementById(fieldId + 'Error');
+    const inputElement = document.getElementById(fieldId);
+    if (show) {
+      errorElement.classList.remove('hidden');
+      inputElement.classList.add('border-red-500');
+    } else {
+      errorElement.classList.add('hidden');
+      inputElement.classList.remove('border-red-500');
+    }
+  }
 
   // ===== Form submission =====
   form.addEventListener('submit', function(e) {
