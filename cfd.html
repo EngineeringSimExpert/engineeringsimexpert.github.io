@@ -590,11 +590,22 @@
 
   <!-- Scroll arrow -->
   <div style="position:absolute;bottom:32px;left:50%;transform:translateX(-50%);">
-    <button onclick="goTo('#services')" style="background:none;border:none;cursor:pointer;color:#475569;" onmouseover="this.style.color='#94a3b8'" onmouseout="this.style.color='#475569'">
-      <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" class="animate-bounce">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-      </svg>
-    </button>
+    <a
+  href="#services"
+  aria-label="Scroll to Services section"
+  style="color:#475569;display:inline-block;">
+  
+  <svg width="32" height="32" fill="none"
+       stroke="currentColor"
+       stroke-width="2"
+       viewBox="0 0 24 24"
+       class="animate-bounce">
+    <path stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19 9l-7 7-7-7"/>
+  </svg>
+
+</a>
   </div>
 </section>
 
