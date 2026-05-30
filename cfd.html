@@ -165,8 +165,22 @@
     .card-hover:hover  { transform: translateY(-4px); }
 
     /* ── Lightbox ── */
-    .lightbox      { display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,.9); backdrop-filter:blur(8px); align-items:center; justify-content:center; padding:32px; }
-    .lightbox.open { ; }
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,.9);
+  backdrop-filter: blur(8px);
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+/* when open */
+.lightbox.open {
+  display: flex;
+}
 
     /* ── Gradient text helper ── */
     .gradient-text {
@@ -1409,7 +1423,7 @@ var lbData = [
     desc: 'External aerodynamic analysis of a vehicle body. Wake structure analysis and surface pressure mapping led to rear-end geometry modifications reducing drag coefficient by 12%.'
   }
 ];
-
+  
 function openLB(i) {
   var d = lbData[i];
   document.getElementById('lb-img').src = d.img;
@@ -1430,6 +1444,6 @@ function closeLB() {
 document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeLB(); });
 
 </script>
-
+  
 </body>
 </html>
