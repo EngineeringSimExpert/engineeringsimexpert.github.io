@@ -564,7 +564,17 @@
       <!-- Right image -->
       <div class="hero-img-col fade-in" style="animation-delay:.3s;">
         <div style="position:absolute;inset:-24px;background:linear-gradient(to right,rgba(59,130,246,.2),rgba(6,182,212,.1),rgba(59,130,246,.2));border-radius:24px;filter:blur(40px);" class="animate-glow-pulse"></div>
-        <div class="animate-float" style=" position:absolute; inset:0; border-radius:16px; overflow:hidden; border:1px solid rgba(51,65,85,.5); box-shadow:0 40px 80px rgba(0,0,0,.5); transition:transform .5s;" >
+        <div
+  class="animate-float"
+  style="
+    position:absolute;
+    inset:0;
+    border-radius:16px;
+    overflow:hidden;
+    border:1px solid rgba(51,65,85,.5);
+    box-shadow:0 40px 80px rgba(0,0,0,.5);
+  "
+>
           
           <img
           src="CFD_1.webp"
@@ -1345,8 +1355,8 @@
   .trust-badge { display:inline-flex; align-items:center; gap:6px; padding:6px 12px; background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.08); border-radius:8px; font-size:.75rem; color:#f1f5f9; }
 
   /* Hero grid */
-  .hero-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; min-height:750px;}
-  .hero-img-col { position: relative; aspect-ratio: 1184 / 864; width: 100%; min-height: 864px;}
+  .hero-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; min-height:650px;}
+  .hero-img-col { position: relative; aspect-ratio: 1184 / 864; width: 100%;}
   
   @media(max-width:1024px){ .hero-grid{ grid-template-columns:1fr; } .hero-img-col{ display:none; } }
 
