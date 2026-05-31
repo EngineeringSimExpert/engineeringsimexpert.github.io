@@ -45,6 +45,7 @@
   <link rel="icon" type="image/png" href="https://engineeringsimexpert.github.io/favicon.png">
   <link rel="shortcut icon" href="https://engineeringsimexpert.github.io/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="https://engineeringsimexpert.github.io/favicon.png">
+  <link rel="preload" as="image" href="CFD_1.jpg">
 
   <!-- ===== Structured Data ===== -->
   <script type="application/ld+json">
@@ -165,7 +166,7 @@
     .animate-pulse      { animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite; }
     .animate-bounce     { animation: bounce 1s infinite; }
     .animate-spin       { animation: spin 1s linear infinite; }
-    .fade-in            { animation: fadeIn .6s ease-out forwards; opacity:0; }
+    .fade-in            { opacity:1; }
     .slide-up           { animation: slideUp .6s ease-out forwards; opacity:0; transform:translateY(20px); }
 
     /* ── Hover helpers ── */
@@ -368,7 +369,7 @@
 <!-- ══════════════════════════════════════════
      HERO
 ══════════════════════════════════════════ -->
-<section style="position:relative; min-height:100vh; display:flex; align-items:center; overflow:hidden; background:#0a0f1a;">
+<section style=" position:relative; min-height:100vh; display:flex; align-items:center; overflow:hidden; background:#0a0f1a;">
 
   <!-- BG glows -->
   <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0a0f1a,#0d1526,#0a0f1a);"></div>
@@ -573,8 +574,9 @@
           width="1024"
           height="682"
           class="w-full h-auto"
-          loading="lazy"
-          decoding="async">
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync">
           
           <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,15,26,.6),transparent);"></div>
         </div>
@@ -1346,8 +1348,9 @@
   .trust-badge { display:inline-flex; align-items:center; gap:6px; padding:6px 12px; background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.08); border-radius:8px; font-size:.75rem; color:#f1f5f9; }
 
   /* Hero grid */
-  .hero-grid { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
-  .hero-img-col { position:relative; }
+  .hero-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; min-height:700px;}
+  .hero-img-col { position:relative; aspect-ratio:1024 / 682;}
+  
   @media(max-width:1024px){ .hero-grid{ grid-template-columns:1fr; } .hero-img-col{ display:none; } }
 
   /* 4-col grid */
