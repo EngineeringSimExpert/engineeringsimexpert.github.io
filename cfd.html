@@ -143,9 +143,7 @@
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
   <!-- ===== Tailwind ===== -->
-  <!--
-<script src="https://cdn.tailwindcss.com"></script>
--->
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
     * { font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
@@ -566,17 +564,14 @@
       <!-- Right image -->
       <div class="hero-img-col fade-in" style="animation-delay:.3s;">
         <div style="position:absolute;inset:-24px;background:linear-gradient(to right,rgba(59,130,246,.2),rgba(6,182,212,.1),rgba(59,130,246,.2));border-radius:24px;filter:blur(40px);" class="animate-glow-pulse"></div>
-        <div style="position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(51,65,85,.5);box-shadow:0 40px 80px rgba(0,0,0,.5);transition:transform .5s;" class="animate-float"
-          onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        <div class="animate-float" style=" position:absolute; inset:0; border-radius:16px; overflow:hidden; border:1px solid rgba(51,65,85,.5); box-shadow:0 40px 80px rgba(0,0,0,.5); transition:transform .5s;" >
+          
           <img
           src="CFD_1.webp"
           alt="CFD simulation with velocity streamlines and pressure contours"
           width="1184"
           height="864"
-          class="w-full h-auto"
-          loading="eager"
-          fetchpriority="high"
-          decoding="sync">
+          loading="eager" fetchpriority="high" decoding="sync" style=" display:block; width:100%; height:auto;">
           
           <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(10,15,26,.6),transparent);"></div>
         </div>
@@ -1351,7 +1346,7 @@
 
   /* Hero grid */
   .hero-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; min-height:750px;}
-  .hero-img-col { position:relative; aspect-ratio:1184 / 864;}
+  .hero-img-col { position: relative; aspect-ratio: 1184 / 864; width: 100%; min-height: 864px;}
   
   @media(max-width:1024px){ .hero-grid{ grid-template-columns:1fr; } .hero-img-col{ display:none; } }
 
