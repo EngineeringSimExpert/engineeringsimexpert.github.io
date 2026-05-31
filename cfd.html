@@ -369,8 +369,9 @@
 <!-- ══════════════════════════════════════════
      HERO
 ══════════════════════════════════════════ -->
-<section style=" position:relative; min-height:900px; display:flex; align-items:center; overflow:hidden; background:#0a0f1a;">
-
+<!-- <section style=" position:relative; min-height:900px; display:flex; align-items:center; overflow:hidden; background:#0a0f1a;"> -->
+<section style=" position:relative; min-height:100vh; display:flex; align-items:center; overflow:hidden; background:#0a0f1a;">
+  
   <!-- BG glows -->
   <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0a0f1a,#0d1526,#0a0f1a);"></div>
   <div style="position:absolute;inset:0;opacity:.03;" class="dot-bg"></div>
@@ -382,7 +383,7 @@
   </div>
 
   <div style="position:relative;z-index:10;width:100%;max-width:1280px;margin:0 auto;padding:80px 24px;">
-    <div class="hero-grid">
+    <div class="hero-grid" style="min-height:calc(100vh - 80px);">
 
       <!-- Left -->
       <div class="fade-in" style="animation-delay:.1s;">
