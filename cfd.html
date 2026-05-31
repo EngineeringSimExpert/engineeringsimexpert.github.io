@@ -159,14 +159,15 @@
     @keyframes bounce    { 0%,100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(.8,0,1,1)} 50%{transform:none;animation-timing-function:cubic-bezier(0,0,.2,1)} }
     @keyframes spin      { to{transform:rotate(360deg)} }
 
-    .animate-float      { animation: float 6s ease-in-out infinite; }
+    .animate-float {animation: none;} body.loaded .animate-float {animation: float 6s ease-in-out infinite;}
     .animate-glow-pulse { animation: glowPulse 4s ease-in-out infinite; }
     .animate-bounce-slow{ animation: bounceSlow 3s ease-in-out infinite; }
     .animate-pulse      { animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite; }
     .animate-bounce     { animation: bounce 1s infinite; }
     .animate-spin       { animation: spin 1s linear infinite; }
     .fade-in            { opacity:1; }
-    .slide-up           { animation: slideUp .6s ease-out forwards; opacity:0; transform:translateY(20px); }
+    .slide-up{ opacity:1; transform:none; animation:none;}
+    .fade-in{ opacity:1; animation:none;}
 
     /* ── Hover helpers ── */
     .btn-hover:hover   { transform: translateY(-2px); }
@@ -368,7 +369,7 @@
 <!-- ══════════════════════════════════════════
      HERO
 ══════════════════════════════════════════ -->
-<section style=" position:relative; min-height:100svh; display:flex; align-items:center; overflow:hidden; background:#0a0f1a;">
+<section style=" position:relative; min-height:900px; display:flex; align-items:center; overflow:hidden; background:#0a0f1a;">
 
   <!-- BG glows -->
   <div style="position:absolute;inset:0;background:linear-gradient(135deg,#0a0f1a,#0d1526,#0a0f1a);"></div>
@@ -392,7 +393,7 @@
         </div>
 
         <!-- H1 -->
-        <h1 style="font-size:clamp(2rem,4.5vw,3.5rem);font-weight:800;color:#fff;line-height:1.1;letter-spacing:-.02em;margin:0 0 24px;" class="slide-up" style="animation-delay:.2s;">
+        <h1 class="slide-up" style=" font-size:clamp(2rem,4.5vw,3.5rem); animation-delay:.2s;">
           Advanced CFD<br>
           <span class="gradient-text">Simulation Services</span>
         </h1>
