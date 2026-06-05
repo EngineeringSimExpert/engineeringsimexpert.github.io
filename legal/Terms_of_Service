@@ -84,165 +84,120 @@
     <!-- Content -->
     <div class="prose prose-slate max-w-none space-y-10">
 
-      <!-- Introduction -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">Use of the Website</h2>
-        <p class="text-slate-600 leading-relaxed">Welcome to EngineeringSimExpert.</p>
-        <p class="text-slate-600 leading-relaxed mt-2">This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
-        <p class="text-slate-600 leading-relaxed mt-2">By using this website, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
-      </section>
+  <!-- Use of the Website -->
+  <section>
+    <h2 class="text-xl font-bold text-slate-900 mb-3">Use of the Website</h2>
+    <p class="text-slate-600 leading-relaxed">
+      You may use this website for lawful and educational purposes only.
+    </p>
+    <p class="text-slate-600 leading-relaxed mt-3">
+      You agree not to:
+    </p>
+    <ul class="list-disc list-inside text-slate-600 space-y-1 mt-2 ml-2">
+      <li>Attempt to interfere with website operation</li>
+      <li>Distribute malicious software</li>
+      <li>Use the website for unlawful activities</li>
+      <li>Misrepresent the source of content or materials</li>
+    </ul>
+  </section>
 
-      <!-- Information We Collect -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">Information We Collect</h2>
+  <!-- Intellectual Property -->
+  <section>
+    <h2 class="text-xl font-bold text-slate-900 mb-3">Intellectual Property</h2>
+    <p class="text-slate-600 leading-relaxed">
+      Unless otherwise stated, all original content, documentation, text,
+      graphics, and materials on this website are the property of
+      EngineeringSimExpert.
+    </p>
+    <p class="text-slate-600 leading-relaxed mt-3">
+      Open-source software, libraries, and third-party materials remain the
+      property of their respective owners.
+    </p>
+  </section>
 
-        <h3 class="text-lg font-semibold text-slate-800 mt-6 mb-2">Information You Provide</h3>
-        <p class="text-slate-600 leading-relaxed">We may collect personal information that you voluntarily provide, including:</p>
-        <ul class="list-disc list-inside text-slate-600 space-y-1 mt-2 ml-2">
-          <li>Name</li>
-          <li>Email address</li>
-          <li>Messages sent through contact forms</li>
-          <li>Any other information you choose to provide</li>
-        </ul>
+  <!-- Educational Content Disclaimer -->
+  <section>
+    <h2 class="text-xl font-bold text-slate-900 mb-3">
+      Educational Content Disclaimer
+    </h2>
+    <p class="text-slate-600 leading-relaxed">
+      The information provided on this website is for educational and
+      informational purposes only.
+    </p>
+    <p class="text-slate-600 leading-relaxed mt-3">
+      While reasonable efforts are made to ensure accuracy, no guarantees are
+      provided regarding the completeness, accuracy, or suitability of any
+      content.
+    </p>
+    <p class="text-slate-600 leading-relaxed mt-3">
+      Users are responsible for independently verifying engineering
+      calculations, simulations, and technical results before using them in
+      academic, research, or professional work.
+    </p>
+  </section>
 
-        <h3 class="text-lg font-semibold text-slate-800 mt-6 mb-2">Automatically Collected Information</h3>
-        <p class="text-slate-600 leading-relaxed">When you visit our website, certain information may be collected automatically, including:</p>
-        <ul class="list-disc list-inside text-slate-600 space-y-1 mt-2 ml-2">
-          <li>IP address (which may be anonymized)</li>
-          <li>Browser type and version</li>
-          <li>Operating system</li>
-          <li>Device information</li>
-          <li>Pages visited</li>
-          <li>Date and time of access</li>
-          <li>Referring websites</li>
-        </ul>
-      </section>
+  <!-- Limitation of Liability -->
+  <section>
+    <h2 class="text-xl font-bold text-slate-900 mb-3">
+      Limitation of Liability
+    </h2>
+    <p class="text-slate-600 leading-relaxed">
+      EngineeringSimExpert shall not be liable for any direct, indirect,
+      incidental, or consequential damages arising from the use of this
+      website or its content.
+    </p>
+  </section>
 
-      <!-- Legal Basis for Processing -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">Legal Basis for Processing (GDPR)</h2>
-        <p class="text-slate-600 leading-relaxed">If you are located in the European Economic Area (EEA), we process personal data based on:</p>
-        <ul class="list-disc list-inside text-slate-600 space-y-1 mt-2 ml-2">
-          <li>Your consent</li>
-          <li>Performance of a contract</li>
-          <li>Compliance with legal obligations</li>
-          <li>Legitimate interests, such as improving website performance and security</li>
-        </ul>
-      </section>
+  <!-- External Resources -->
+  <section>
+    <h2 class="text-xl font-bold text-slate-900 mb-3">External Resources</h2>
+    <p class="text-slate-600 leading-relaxed">
+      This website may link to external websites or resources. We do not
+      control or endorse their content and are not responsible for their
+      availability or accuracy.
+    </p>
+  </section>
 
-      <!-- How We Use Information -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">How We Use Information</h2>
-        <p class="text-slate-600 leading-relaxed">We use collected information to:</p>
-        <ul class="list-disc list-inside text-slate-600 space-y-1 mt-2 ml-2">
-          <li>Operate and maintain the website</li>
-          <li>Improve content and user experience</li>
-          <li>Analyze website performance</li>
-          <li>Respond to inquiries</li>
-          <li>Detect and prevent fraud or abuse</li>
-          <li>Comply with legal obligations</li>
-        </ul>
-      </section>
+  <!-- Changes to the Terms -->
+  <section>
+    <h2 class="text-xl font-bold text-slate-900 mb-3">
+      Changes to the Terms
+    </h2>
+    <p class="text-slate-600 leading-relaxed">
+      These Terms may be modified at any time. Continued use of the website
+      after updates constitutes acceptance of the revised Terms.
+    </p>
+  </section>
 
-      <!-- Cookies -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">Cookies and Tracking Technologies</h2>
-        <p class="text-slate-600 leading-relaxed">This website may use cookies and similar technologies to:</p>
-        <ul class="list-disc list-inside text-slate-600 space-y-1 mt-2 ml-2">
-          <li>Store user preferences</li>
-          <li>Measure website traffic</li>
-          <li>Improve functionality</li>
-          <li>Analyze visitor behavior</li>
-        </ul>
-        <p class="text-slate-600 leading-relaxed mt-3">You may refuse cookies through your browser settings.</p>
-        <p class="text-slate-600 leading-relaxed mt-2">Where legally required, non-essential cookies are only used after obtaining your consent.</p>
-      </section>
+  <!-- Governing Law -->
+  <section>
+    <h2 class="text-xl font-bold text-slate-900 mb-3">Governing Law</h2>
+    <p class="text-slate-600 leading-relaxed">
+      These Terms shall be governed by the laws applicable in the jurisdiction
+      of the website owner.
+    </p>
+  </section>
 
-      <!-- Google Analytics -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">Google Analytics</h2>
-        <p class="text-slate-600 leading-relaxed">If Google Analytics is enabled, Google may collect information regarding website usage.</p>
-        <p class="text-slate-600 leading-relaxed mt-2">Google Analytics helps us understand how visitors interact with our website.</p>
-        <p class="text-slate-600 leading-relaxed mt-2">You can learn more about Google's privacy practices on <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">Google's Privacy Policy page</a>.</p>
-        <p class="text-slate-600 leading-relaxed mt-2">You may opt out of Google Analytics through browser settings or Google's opt-out tools.</p>
-      </section>
+  <!-- Contact -->
+  <section>
+    <h2 class="text-xl font-bold text-slate-900 mb-3">Contact</h2>
+    <p class="text-slate-600 leading-relaxed">
+      If you have questions about these Terms, please contact us through the
+      information provided on this website.
+    </p>
+    <p class="text-slate-600 leading-relaxed mt-2">
+      Email:
+      <a
+        href="mailto:Engineeringsimexpert@gmail.com"
+        class="text-blue-600 hover:text-blue-800 underline"
+      >
+        Engineeringsimexpert@gmail.com
+      </a>
+    </p>
+  </section>
+</div>
+</div>
 
-      <!-- Google AdSense -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">Google AdSense</h2>
-        <p class="text-slate-600 leading-relaxed">If advertising is displayed through Google AdSense:</p>
-        <ul class="list-disc list-inside text-slate-600 space-y-1 mt-2 ml-2">
-          <li>Google may use cookies to personalize advertisements.</li>
-          <li>Third-party vendors may use cookies based on your previous visits to this website or other websites.</li>
-          <li>Users can manage advertising preferences through <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 underline">Google Ad Settings</a>.</li>
-        </ul>
-      </section>
-
-      <!-- Data Retention -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">Data Retention</h2>
-        <p class="text-slate-600 leading-relaxed">We retain personal information only for as long as necessary to fulfill the purposes described in this Privacy Policy or to comply with legal obligations.</p>
-      </section>
-
-      <!-- Data Security -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">Data Security</h2>
-        <p class="text-slate-600 leading-relaxed">We implement reasonable technical and organizational measures to protect personal information.</p>
-        <p class="text-slate-600 leading-relaxed mt-2">However, no method of electronic transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
-      </section>
-
-      <!-- GDPR Rights -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">Your GDPR Rights</h2>
-        <p class="text-slate-600 leading-relaxed">If you are located in the European Union, you may have the right to:</p>
-        <ul class="list-disc list-inside text-slate-600 space-y-1 mt-2 ml-2">
-          <li>Access your personal data</li>
-          <li>Correct inaccurate information</li>
-          <li>Request deletion of your data</li>
-          <li>Restrict processing</li>
-          <li>Object to processing</li>
-          <li>Request data portability</li>
-          <li>Withdraw consent at any time</li>
-        </ul>
-        <p class="text-slate-600 leading-relaxed mt-3">To exercise these rights, contact us using the information below.</p>
-      </section>
-
-      <!-- Third-Party Services -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">Third-Party Services</h2>
-        <p class="text-slate-600 leading-relaxed">We may use third-party services including:</p>
-        <ul class="list-disc list-inside text-slate-600 space-y-1 mt-2 ml-2">
-          <li>GitHub Pages</li>
-          <li>Google Analytics</li>
-          <li>Google AdSense</li>
-          <li>Embedded videos or content providers</li>
-        </ul>
-        <p class="text-slate-600 leading-relaxed mt-3">These providers maintain their own privacy policies.</p>
-      </section>
-
-      <!-- External Links -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">External Links</h2>
-        <p class="text-slate-600 leading-relaxed">Our website may contain links to external websites. We are not responsible for their privacy practices or content.</p>
-      </section>
-
-      <!-- Changes -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">Changes to This Privacy Policy</h2>
-        <p class="text-slate-600 leading-relaxed">We may update this Privacy Policy periodically. Any updates will be posted on this page with a revised "Last Updated" date.</p>
-      </section>
-
-      <!-- Contact -->
-      <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">Contact</h2>
-        <p class="text-slate-600 leading-relaxed">For privacy-related inquiries, please contact:</p>
-        <p class="text-slate-600 leading-relaxed mt-2">
-          Email: <a href="mailto:Engineeringsimexpert@gmail.com" class="text-blue-600 hover:text-blue-800 underline">Engineeringsimexpert@gmail.com</a>
-        </p>
-      </section>
-
-    </div>
-  </div>
 </main>
 
 <!-- Footer -->
