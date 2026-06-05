@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy | EngineeringSimExpert</title>
-  <meta name="description" content="Privacy Policy for EngineeringSimExpert – learn how we collect, use, and protect your information.">
+  <title>Terms of Service | EngineeringSimExpert</title>
+  <meta name="description" content="Terms of Service for EngineeringSimExpert – learn how we collect, use, and protect your information.">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="https://engineeringsimexpert.github.io/favicon.png">
@@ -69,15 +69,16 @@
   </div>
 </nav>
 
-<!-- Privacy Policy Content -->
+<!-- Terms of Service Content -->
 <main class="py-20 bg-white">
   <div class="max-w-3xl mx-auto px-6 lg:px-12">
 
     <!-- Page Header -->
     <div class="mb-12">
       <span class="inline-block px-4 py-1.5 bg-blue-50 text-blue-600 text-sm font-semibold rounded-full mb-6">Legal</span>
-      <h1 class="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">Privacy Policy</h1>
+      <h1 class="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">Terms of Service</h1>
       <p class="mt-3 text-slate-500 text-sm">Last updated: June 2026</p>
+      <p class="mt-3 text-slate-500 text-sm">By accessing and using EngineeringSimExpert, you agree to the following terms:</p>
     </div>
 
     <!-- Content -->
@@ -85,7 +86,7 @@
 
       <!-- Introduction -->
       <section>
-        <h2 class="text-xl font-bold text-slate-900 mb-3">Introduction</h2>
+        <h2 class="text-xl font-bold text-slate-900 mb-3">Use of the Website</h2>
         <p class="text-slate-600 leading-relaxed">Welcome to EngineeringSimExpert.</p>
         <p class="text-slate-600 leading-relaxed mt-2">This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
         <p class="text-slate-600 leading-relaxed mt-2">By using this website, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
