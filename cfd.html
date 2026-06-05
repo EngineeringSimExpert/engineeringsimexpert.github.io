@@ -153,24 +153,24 @@
 
     html {scroll-behavior: smooth;}
 
-    /* ── Animations ── */
+    /* ── s ── */
     @keyframes fadeIn    { to { opacity: 1; } }
     @keyframes slideUp   { to { opacity: 1; transform: translateY(0); } }
     @keyframes float     { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
     @keyframes glowPulse { 0%,100%{opacity:.3} 50%{opacity:.6} }
     @keyframes bounceSlow{ 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
     @keyframes pulse     { 0%,100%{opacity:1} 50%{opacity:.5} }
-    @keyframes bounce    { 0%,100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(.8,0,1,1)} 50%{transform:none;animation-timing-function:cubic-bezier(0,0,.2,1)} }
+    @keyframes bounce    { 0%,100%{transform:translateY(-25%);-timing-function:cubic-bezier(.8,0,1,1)} 50%{transform:none;-timing-function:cubic-bezier(0,0,.2,1)} }
     @keyframes spin      { to{transform:rotate(360deg)} }
 
-    .animate-float {animation: none;} body.loaded .animate-float {animation: float 6s ease-in-out infinite;}
-    .animate-glow-pulse { animation: glowPulse 4s ease-in-out infinite; }
-    .animate-bounce-slow{ animation: bounceSlow 3s ease-in-out infinite; }
-    .animate-pulse      { animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite; }
-    .animate-bounce     { animation: bounce 1s infinite; }
-    .animate-spin       { animation: spin 1s linear infinite; }
+    .animate-float {: none;} body.loaded .animate-float {: float 6s ease-in-out infinite;}
+    .animate-glow-pulse { : glowPulse 4s ease-in-out infinite; }
+    .animate-bounce-slow{ : bounceSlow 3s ease-in-out infinite; }
+    .animate-pulse      { : pulse 2s cubic-bezier(.4,0,.6,1) infinite; }
+    .animate-bounce     { : bounce 1s infinite; }
+    .animate-spin       { : spin 1s linear infinite; }
     .fade-in            { opacity:1; }
-    .slide-up{ opacity:1; transform:none; animation:none;}
+    .slide-up{ opacity:1; transform:none; :none;}
     .fade-in{ opacity:1; animation:none;}
 
     /* ── Hover helpers ── */
@@ -378,7 +378,7 @@
     <div class="hero-grid" style="min-height:calc(100vh - 80px);">
 
       <!-- Left -->
-      <div class="fade-in" style="animation-delay:.1s;">
+      <div class="fade-in">
         <!-- Badge -->
         <div style="display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.2);border-radius:999px;margin-bottom:32px;">
           <span style="width:8px;height:8px;background:#22d3ee;border-radius:50%;" class="animate-pulse"></span>
