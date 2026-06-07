@@ -14,4 +14,22 @@
     <lastmod>2026-06-06</lastmod>
   </url>
 
+  <!-- Privacy Policy Page -->
+  <url>
+    <loc>https://engineeringsimexpert.github.io/legal/privacy_policy.html</loc>
+    <lastmod>2026-06-06</lastmod>
+  </url>
+
+  <!-- Terms Of Service -->
+  <url>
+    <loc>https://engineeringsimexpert.github.io/legal/terms_of_service.html</loc>
+    <lastmod>2026-06-06</lastmod>
+  </url>
+
+  <!-- Cookie Policy -->
+  <url>
+    <loc>https://engineeringsimexpert.github.io/legal/cookie_policy.html</loc>
+    <lastmod>2026-06-06</lastmod>
+  </url>
+  
 </urlset>
